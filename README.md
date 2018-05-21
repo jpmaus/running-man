@@ -8,7 +8,7 @@ The running-man executable CDF requires a [CDF Player](https://www.wolfram.com/c
 </p>
 
 ### 1. pitch class integer notation
-running-man uses [integer notation](https://en.wikipedia.org/wiki/Pitch_class#Integer_notation) which represents notes as pitch classes (PCs).  For example, if C♮ = 0, then C♯ = 1, D♮ = 2, D♯ = 3, and so on.  PCs including more than one member represent harmonies and/or scales.  For example, C♮ Major Triad {0, 4, 7}, D♮ Minor Triad {2, 5, 9}, F♮ Major Seventh Chord {5, 9, 0, 4};  etc.  In PC integer notation each pitch is included in the same class regardless its octave position (e.g., C4 = 0, C5 = 0; D3 = 2, D6 = 2; etc.).  
+running-man uses [integer notation](https://en.wikipedia.org/wiki/Pitch_class#Integer_notation) which represents notes as pitch classes (PCs). For example, C♮ Major Triad {0, 4, 7}, D♮ Minor Triad {2, 5, 9}, F♮ Major Seventh Chord {5, 9, 0, 4};  etc.  In PC integer notation each pitch is included in the same class regardless its octave position (e.g., C4 = 0, C5 = 0; D3 = 2, D6 = 2; etc.).  
 
 | **Letter Notation** | **Pitch Class** |
 | :---: | :---: |
@@ -131,7 +131,7 @@ change a variable to generate pitches from ionian scale rather than from the dor
 In[]:= Mono[ionian]
 Out[]:= {11, 0, 0, 2, 4, 7, 0, 9, 11, 9, 9}
 ```
-The table above illusrates how **Mono[**_dorian_**]** with _F_ defined as the Fibonacci sequence (1, 1, 2, 3, 5, ...) translates the sequence into pitch events in the dorian scale.
+The table below illusrates how **Mono[**_dorian_**]** with _F_ defined as the Fibonacci sequence (1, 1, 2, 3, 5, ...) translates the sequence into pitch events in the dorian scale.
 
 |           **function**                   | 1     | 2     | 3     | 4     | 5     | 6     | 7     | 8     | 9     | 10    | 11    | 12    |
 | :---:                              | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
