@@ -159,7 +159,7 @@ The **Poly[]** function runs a **MovingWindow[]** of **Harmonize[]** over the se
 Poly[exp_] := MovingWindow[Harmonize, Mono[m], 3, 3];
 ```
 ## future work
-⋅⋅* pitch duration / rhythmic generation.
-..* harmonies of more than three voices
-..* passing tones, suspensions, escape tones, etc.
-..* option to select GM instruments besides default piano.
+* pitch duration / rhythmic generation.
+* harmonies of more than three voices
+* passing tones, suspensions, escape tones, etc.
+* option to select GM instruments besides default piano.
