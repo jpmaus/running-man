@@ -42,7 +42,7 @@ running-man makes frequent use of these basic Wolfram Language functions.  For m
 - **LinearRecurrence[**_ker_, _int_ ,_n_**]** gives the set of _n_ values of the linear recurrence relation with kernel _ker_ and initial values _int_.
 
 #### 2.2 integer sequence functions
-The Wolfram Language contains an extensive collection of integer sequence functions.  For example, the 4th number of the Fibonacci sequence (i.e., 1, 1, 2, 3, 4, ...) can be given by entering:  
+The Wolfram Language contains an extensive collection of integer sequence functions.  For example, the 4th number of the Fibonacci sequence (i.e., 1, 1, 2, 3, 5, ...) can be given by entering:  
 
 ```mathematica
 In[]:= Fibonoacci[4]
