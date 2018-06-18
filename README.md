@@ -25,7 +25,7 @@ running-man uses [integer notation](https://en.wikipedia.org/wiki/Pitch_class#In
 |  A♯ | 10 |
 | B♮  | 11 |
 | E♮ Minor Triad | {4, 5, 9} |
-| C♮ Major Scale | {0, 2, 4, 5, 7, , 9, 11} |
+| C♮ Major Scale | {0, 2, 4, 5, 7, 9, 11} |
 
 ### 2. basic functions
 #### 2.1 wolfram language functions
@@ -93,6 +93,17 @@ In[]:=MovingWindow[Take, Fibonacci[Range[9]], 1, 3]
 Out[]:={{1}, {3}, {13}}
 ```
 
+
+#### 2.4 scale table function
+running-man provides a function for generating tables of scale sequences for ease of adding new modes:
+```mathematica
+ScaleTable[seq_, max_, final_: 12] := 
+  Append[Flatten[Table[seq, max]], final];
+```
+For example:
+```mathematica
+ionian = ScaleTable[{0, 2, 4, 5, 7, 9, 11}, 36];
+```
 ### 3. MIDI pitch event translations
 #### 3.1 mono function
 running-man uses the **Mono[]** function to translate the integer sequences into MIDI pitch events in the scale _m_:
@@ -162,4 +173,3 @@ Poly[exp_] := MovingWindow[Harmonize, Mono[m], 3, 3];
 * pitch duration / rhythmic generation.
 * harmonies of more than three voices
 * passing tones, suspensions, escape tones, etc.
-* option to select GM instruments besides default piano.
